@@ -13,6 +13,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@1,18..144,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <title>Bikcraft - Bicicletas Elétricas</title>
+  <script>
+    document.documentElement.classList.add('js')
+  </script>  
 </head>
 
 <body id="">
@@ -34,12 +37,12 @@
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="font-1-xxl cor-0">Bicicletas feitas sob medida<span>.</span></h1>
-        <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua
+        <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">Bicicletas feitas sob medida<span>.</span></h1>
+        <p class="font-2-l cor-5 fadeInDown" data-anime="400">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua
           velocidade com a Bikcraft.</p>
-        <a class="botao" href="./bicicletas.html">Selecione a sua</a>
+        <a class="botao fadeInDown" href="./bicicletas.html" data-anime="600">Selecione a sua</a>
       </div>
-      <picture>
+      <picture class="fadeInDown" data-anime="800">
         <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
         <img src="./img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta Elétrica Preta.">
       </picture>
@@ -143,7 +146,7 @@
           <li>Suporte 08h às 18h</li>
           <li>Cobertura Estadual</li>
         </ul>
-        <a class="botao secundario" href="./orcamento.html">Inscreva-se</a>
+        <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
       </div>
       <div class="seguros-item">
         <h3 class="font-1-xl cor-p1">OURO</h3>
@@ -156,7 +159,7 @@
           <li>Desconto em parceiros</li>
           <li>Acesso ao Clube Bikcraft</li>
         </ul>
-        <a class="botao" href="./orcamento.html">Inscreva-se</a>
+        <a class="botao" href="./orcamento.html?tipo=seguro&produto=ouro">Inscreva-se</a>
       </div>
     </div>
   </article>
@@ -197,6 +200,9 @@
       <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados</p>
     </div>
   </footer>
+
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
